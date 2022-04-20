@@ -29,7 +29,7 @@ public class Employee {
 	private int spouseIdNumber;
 
 	private List<String> childNames;
-	private List<String> childIdNumbers;
+	private List<int> childIdNumbers;
 
 	public Employee(int employeeId, String firstName, String lastName, int idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
 		this.employeeId = employeeId;
@@ -79,12 +79,12 @@ public class Employee {
 		this.otherMonthlyIncome = income;
 	}
 
-	public void setSpouse(String spouseName, String spouseIdNumber) {
+	public void setSpouse(String spouseName, int spouseIdNumber) {
 		this.spouseName = spouseName;
 		this.spouseIdNumber = idNumber;
 	}
 
-	public void addChild(String childName, String childIdNumber) {
+	public void addChild(String childName, int childIdNumber) {
 		childNames.add(childName);
 		childIdNumbers.add(childIdNumber);
 	}
